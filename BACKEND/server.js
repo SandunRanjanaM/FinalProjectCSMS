@@ -8,6 +8,8 @@ const uploadRoute = require("./routes/uploadRoute.js")
 require("dotenv").config();
 //======================================
 const dateRouter = require('./routes/dateRouter.js');
+const packageLoginRouter=require('./routes/PackageloginRouter.js')
+
 
 
 const PORT = process.env.PORT || 8070;
@@ -41,6 +43,7 @@ const cabRouter = require("./routes/cab.js");
 
 app.use("/cab",cabRouter);
 app.use("/uploads", uploadRoute);
+app.use("/packagelogin",packageLoginRouter);
 
 app.listen(PORT, () => {
 

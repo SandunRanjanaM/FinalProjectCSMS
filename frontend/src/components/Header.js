@@ -6,6 +6,9 @@ function Header() {
   return (
     <div className="nav-container">
       <ul className="nav nav-pills">
+      <li className="nav-item">
+          <Link to="/" className="nav-link">Dashboard</Link>
+        </li>
         <li className="nav-item">
           <Link to="/home" className="nav-link">Home</Link>
         </li>

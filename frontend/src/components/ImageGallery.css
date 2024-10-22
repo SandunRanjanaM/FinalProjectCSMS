@@ -80,3 +80,15 @@
     color: #4CAF50; /* Green color for the approval checkmark */
     font-size: 24px;
 }
+
+.small-card {
+    max-width: 250px; /* Limit the width of the card */
+    margin: auto; /* Center the card */
+  }
+  
+  .card-img-top {
+    height: 150px; /* Limit the image height */
+    object-fit: cover; /* Ensure the image scales properly */
+  }
+  
+

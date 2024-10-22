@@ -35,6 +35,13 @@ const cabSchema = new Schema({
         required: true
     },
 
+    approved: {
+        type: Boolean,
+        default: false,
+       
+    },
+
+
 });
 
 const Cab = mongoose.model("Cab", cabSchema);

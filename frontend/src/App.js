@@ -9,6 +9,10 @@ import PackageCounts from './components/PackageCounts';
 import UploadedImagesPage from './components/UploadedImagesPage';
 import UploadForm from './components/UploadForm';
 import ImageGallery from './components/ImageGallery';
+import Dashboard from './components/Dashboard';
+import Login from './components/Login';
+import AddUser from './components/addUser';
+
  // Import the new component
 
 function App() {
@@ -25,6 +29,13 @@ function App() {
         <Route path="/uploaded-images" element={<UploadedImagesPage/>} />
         <Route path="/form" element={<UploadForm/>} />
         <Route path="/uploads" element={<ImageGallery/>} />
+        <Route path="/" element={<Dashboard/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/addlogin" element={<AddUser/>} />
+
+
+        
+  
       
 
        
