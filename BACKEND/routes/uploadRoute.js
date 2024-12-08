@@ -8,7 +8,7 @@ const Cab = require('../models/Cab');
 // Multer storage configuration
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './uploads');
+    cb(null,'./uploads');
   },
   filename: function (req, file, cb) {
     cb(null, `${Date.now()}-${file.originalname}`);
@@ -128,7 +128,7 @@ router.delete('/fileUpload/:id', async (req, res) => {
     }
 
     // Optionally, delete the file from the file system
-    fs.unlink(path.join(__dirname,'../C:/Project/FinalProjectCSMS/BACKEND/routes/uploads', filePath), (err) => {
+    fs.unlink(path.join(__dirname, filePath), (err) => {
       if (err) {
         console.error('Error deleting file:', err);
       } else {
